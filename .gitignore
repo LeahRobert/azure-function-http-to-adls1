@@ -1,0 +1,30 @@
+
+
+
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+ADLFunction/[Dd]ebug/
+ADLFunction/[Rr]elease/
+ADLFunction/x64/
+ADLFunction/[Bb]in/
+ADLFunction/[Oo]bj/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+
+# OS generated files #
+.DS_Store*
+Icon?
+
+# Ignore Publish Profiles for Azure Account
+ADLFunction/Properties/PublishProfiles/*
+
