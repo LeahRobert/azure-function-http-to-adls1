@@ -1,14 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <UserSecretsId>cd336fe3-ddba-4493-9076-76a9b6328fbb</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ChoETL.NETStandard" Version="1.2.0.7" />
-    <PackageReference Include="Microsoft.Azure.DataLake.Store" Version="1.1.21" />
-    <PackageReference Include="Microsoft.Azure.Management.DataLake.Store" Version="2.2.1" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.1" />
-    <PackageReference Include="Microsoft.Rest.ClientRuntime.Azure.Authentication" Version="2.4.1" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.3" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
