@@ -14,6 +14,12 @@ ADLFunction/x64/
 ADLFunction/[Bb]in/
 ADLFunction/[Oo]bj/
 
+BlobFunction/[Dd]ebug/
+BlobFunction/[Rr]elease/
+BlobFunction/x64/
+BlobFunction/[Bb]in/
+BlobFunction/[Oo]bj/
+
 # NuGet Packages
 *.nupkg
 # The packages folder can be ignored because of Package Restore
@@ -27,4 +33,4 @@ Icon?
 
 # Ignore Publish Profiles for Azure Account
 ADLFunction/Properties/PublishProfiles/*
-
+BlobFunction/Properties/PublishProfiles/*
