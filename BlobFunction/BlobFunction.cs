@@ -15,11 +15,6 @@ namespace BlobFunction
 {
     public static class BlobFunction
     {
-        private static string accountName = "leahblob";
-        private static string accessKey = "bmGwmPwbvCVFThA7GI2CmzEgmz4fwlyBzeq9S7y6Qme8+l8Ej+BO3JeHTOwDbOqRA2x8fFdYXqp9f8TY1mFa6g==";
-        private static string connectionString = "DefaultEndpointsProtocol=https;AccountName=" + accountName + ";AccountKey=" + accessKey + ";EndpointSuffix=core.windows.net";
-        private static CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
-
         [FunctionName("BlobFunction")]
         public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req, ILogger log)
         {
@@ -39,8 +34,8 @@ namespace BlobFunction
 
         private async static Task AppendBlob(string name, string data, ILogger log)
         {
-            string accountName = "leahblob";
-            string accessKey = "bmGwmPwbvCVFThA7GI2CmzEgmz4fwlyBzeq9S7y6Qme8+l8Ej+BO3JeHTOwDbOqRA2x8fFdYXqp9f8TY1mFa6g==";
+            string accountName = "<account-name>";
+            string accessKey = "<access-key>";
             string connectionString = "DefaultEndpointsProtocol=https;AccountName=" + accountName + ";AccountKey=" + accessKey + ";EndpointSuffix=core.windows.net";
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
             CloudBlobClient client;

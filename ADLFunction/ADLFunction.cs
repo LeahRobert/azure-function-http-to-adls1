@@ -19,10 +19,10 @@ namespace ADLFunction
 {
     public static class ADLFunction
     {
-        private static string adlsAccountName = "leah.azuredatalakestore.net";
-        private static string applicationId = "d097727f-dbf1-4829-b5b3-acc631342994";     // Also called client id
-        private static string clientSecret = "[Yk28Yv30.Kgf_kTCHOLdBi@4V.s51hz";
-        private static string tenantId = "ce001ea4-74b1-40fc-9184-edb4a21a35d5";
+        private static string adlsAccountName = "<datalakestore-domain-name>";
+        private static string applicationId = "<application-id>";     // Also called client id
+        private static string clientSecret = "<client-secret>";
+        private static string tenantId = "<tenant-id>";
 
         [FunctionName("ADLFunction")]
         public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req, ILogger log)
